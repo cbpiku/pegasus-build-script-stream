@@ -10,7 +10,7 @@ options {timestamps()}
         stage('Git-Check-Out') {
             steps {
                 echo "check-out"
-                git clone https://gitlab.com/PiKU_/pegasus-build-script-stream.git
+                sh "./git-checkout.sh"
 
             }
         }
