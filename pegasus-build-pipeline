@@ -16,15 +16,15 @@ options {timestamps()}
         }
         stage('Git-Sync') {
             steps {
-                echo "check-out"
- //               sh "./wfc-sync.sh"
+                echo "Build"
+                sh "./build.sh"
 
             }
         }
         stage('QNX-Build') {
             steps {
-                echo "QNX-Build"
-//                sh "./wfc-qnx-build.sh"
+                echo "Test"
+                sh "./gtest.sh"
             }
         }
 }
