@@ -1,9 +1,9 @@
 #!/bin/sh
 set -e
 set -x
-pushd demo-1
+cd demo-1
 mkdir build
-pushd build
+cd build
 cmake ..
 make
 popd
