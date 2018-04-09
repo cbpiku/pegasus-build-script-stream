@@ -6,6 +6,5 @@ mkdir build
 cd build
 cmake ..
 make
-popd
-popd
+
 
